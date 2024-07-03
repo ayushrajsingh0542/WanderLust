@@ -56,9 +56,6 @@ const sessionOptions={
         httpOnly:true,
     },
 };
-// app.get("/",(req,res)=>{
-//     res.send("hi am roor")
-// });
 
 
 
@@ -80,17 +77,7 @@ app.use((req,res,next)=>{
     next();
 });
 
-// app.get("/demouser", async (req,res)=>{
-//     let fakeUser=new User({
-//         email:"aayushrajsingh11@gmail.com",
-//         username:"ayush11-raj-singh",//hmlog username model nhi daale the user.js phir bhi yha likh skte hai kyuki moongoose apne aap create kr dega
-//     });
 
-//     let registeredUser=await User.register(fakeUser,"helloworld");//helloworld is password..Convenience method to register a new user instance with a given password. Checks if username is unique. 
-
-//     res.send(registeredUser);
-
-// });
 
 
 app.use("/listings",listingRouter);
