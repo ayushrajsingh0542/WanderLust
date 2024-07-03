@@ -1,0 +1,23 @@
+
+<% if(success && success.length) { %>
+    <!-- success.length isliye daale because sucess ek array hai jisme wo array exist krra hai even though usme kuch na ho to usko tackle krne ke liye -->
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+    <%= success %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
+</div>
+<% } %>
+
+
+
+<%if(error&&error.length){%>
+    <!-- error.length isliye daale because sucess ek array hai jisme wo array exist krra hai even though usme kuch na ho to usko tackle krne ke liye -->
+<div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+    <%= error %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+    <%}%>
+
+
+
