@@ -94,7 +94,7 @@ body{
 }
 #map { 
    height: 25rem;
-   width: 80vh; 
+   width: 100%; 
 }
 @media (max-width: 768px){
     .navbar-collapse.collapse {
