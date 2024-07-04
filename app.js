@@ -16,6 +16,7 @@ const ExpressError=require("./utils/ExpressError.js");
 const listingRouter=require("./routes/listing.js")
 const reviewRouter=require("./routes/review.js");
 const userRouter=require("./routes/user.js");
+const searchRoutes = require('./routes/search.js');
 
 const session=require("express-session");
 const MongoStore = require('connect-mongo');
@@ -83,6 +84,7 @@ app.use((req,res,next)=>{
 app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter)//isiliye jab common part yaha likhe to routes me nhi
 app.use("/",userRouter);
+app.use('/',searchRoutes);
 
 
 app.all("*",(req,res,next)=>{
